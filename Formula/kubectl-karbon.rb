@@ -5,20 +5,20 @@
 class KubectlKarbon < Formula
   desc "Kubectl extension to quickly connect to an existing karbon cluster!"
   homepage "https://github.com/nutanix/kubectl-karbon"
-  version "0.11.7"
+  version "0.12.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/nutanix/kubectl-karbon/releases/download/v0.11.7/kubectl-karbon_v0.11.7_darwin_amd64.tar.gz"
-      sha256 "9e3cdcc394276e6ef0f6349725d1bc795882526ea2d8f0deae10a19aa4e6e60c"
+      url "https://github.com/nutanix/kubectl-karbon/releases/download/v0.12.0/kubectl-karbon_v0.12.0_darwin_amd64.tar.gz"
+      sha256 "9cc14b91eb57bd07221da0c26c24f07f9844c3f6055e0292e6121d8c38c68347"
 
       def install
         bin.install "kubectl-karbon"
       end
     end
     on_arm do
-      url "https://github.com/nutanix/kubectl-karbon/releases/download/v0.11.7/kubectl-karbon_v0.11.7_darwin_arm64.tar.gz"
-      sha256 "ab46a76235d415a1a2532db2ed853f5fe5367b1c31a04d04478773412c9e383a"
+      url "https://github.com/nutanix/kubectl-karbon/releases/download/v0.12.0/kubectl-karbon_v0.12.0_darwin_arm64.tar.gz"
+      sha256 "38303f602a059cd01229f28e43def3155154e73176d2c4f21284968192f78d4f"
 
       def install
         bin.install "kubectl-karbon"
@@ -29,8 +29,8 @@ class KubectlKarbon < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/nutanix/kubectl-karbon/releases/download/v0.11.7/kubectl-karbon_v0.11.7_linux_amd64.tar.gz"
-        sha256 "9256dfb0db489786b6795544519291d5b9c519ad333c60a4ecb7c394286dba4c"
+        url "https://github.com/nutanix/kubectl-karbon/releases/download/v0.12.0/kubectl-karbon_v0.12.0_linux_amd64.tar.gz"
+        sha256 "a854f7db2888270a070632d9b12f17287b79a799ba474b610ce78fae44bdf47c"
 
         def install
           bin.install "kubectl-karbon"
@@ -39,8 +39,8 @@ class KubectlKarbon < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/nutanix/kubectl-karbon/releases/download/v0.11.7/kubectl-karbon_v0.11.7_linux_arm64.tar.gz"
-        sha256 "3a9916bcbdb4da8bfe763a42b456e2c09620881d8378e2f058dda6a9bed1e409"
+        url "https://github.com/nutanix/kubectl-karbon/releases/download/v0.12.0/kubectl-karbon_v0.12.0_linux_arm64.tar.gz"
+        sha256 "3f9fdb7752ecba466d9772a7c93dafa69538a6dc3759df9018113d901e073bf4"
 
         def install
           bin.install "kubectl-karbon"
